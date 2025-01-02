@@ -1,0 +1,26 @@
+{
+  "name": "baohomnay-be",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/baohomnay-be/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["build"],
+      "options": {
+        "buildTarget": "baohomnay-be:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "baohomnay-be:build:development"
+        },
+        "production": {
+          "buildTarget": "baohomnay-be:build:production"
+        }
+      }
+    }
+  }
+}

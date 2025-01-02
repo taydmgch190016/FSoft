@@ -1,0 +1,49 @@
+.scrollable-container {
+    padding: 5px;
+    background-color: #f6f3f3; 
+    height : 100% !important;
+
+  }
+  
+  .message-card {
+    display: flex;
+    margin: 10px 0;
+  }
+  
+  .message-card.right {
+    flex-direction: row-reverse !important; 
+    display: flex !important;
+    text-align: right;
+  }
+  
+  .message-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .message-content {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    word-break: break-word;
+    display: inline-block;
+  }
+  
+  .message-content.mine {
+    background-color: #0078ff; 
+    color: white;
+    border-top-right-radius: 5px;
+  }
+  
+  .message-content.other {
+    background-color: #e0e0e0; 
+    color: black;
+    border-top-left-radius: 5px;
+  }
+  
+  .message-avatar {
+    margin: 0 10px;
+  }
+  

@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+/* .editor-image div img {
+  max-width: 50% !important;
+} */
+
+.toolbar{
+  height: 50px !important;
+}
+
+.editor-shell{
+  max-width: 100% !important;
+}
+
+.ant-card-meta-description div div{
+  text-align: center;
+}

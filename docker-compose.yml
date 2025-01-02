@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    ports:
+      - '4200:4200'
+      - '3000:3000'
+    environment:
+      MONGO_URI: mongodb://mongodb:27017/baohomnay
+    depends_on:
+      - mongodb
+    links:
+      - mongodb
+
+  mongodb:
+    image: mongo:4.4.6
+    environment:
+      MONGO_INITDB_DATABASE: baohomnay
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
